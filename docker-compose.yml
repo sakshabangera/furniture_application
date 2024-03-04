@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: 'mongo'
+    ports:
+      - "27017:27017"
+  
+  home_backend:
+    image: 'sakshabangera/home_backend:latest'
+    ports:
+      - "8000:8000"
+
+  home_frontend:
+    image: 'sakshabangera/home_frontend:latest'
+    ports:
+      - "3000:3000"
